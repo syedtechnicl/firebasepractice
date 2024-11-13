@@ -1,10 +1,9 @@
 import React from "react";
-import MainCarditems from "./Components/MainCarditems";
 
 const page = () => {
   return (
     <div>
-      <MainCarditems />
+      <h1>Card</h1>
     </div>
   );
 };
