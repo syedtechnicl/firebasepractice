@@ -16,11 +16,10 @@ export const counterSlice = createSlice({
   initialState: [] as CartItem[],
   reducers: {
     AddTodo: (state, action: PayloadAction<CartItem>) => {
-      // return state.push(action.payload);
-      console.log(...state);
+      state.push(action.payload);
     },
-    RemoveTodo: (state, action: PayloadAction) => {
-      console.log("remove");
+    RemoveTodo: (state, action: PayloadAction<number>) => {
+      return state.filter((e) => e.id !== action.payload);
     },
   },
 });

@@ -10,13 +10,20 @@ const Header = () => {
   return (
     <nav style={styles.navbar}>
       <h1 style={styles.title}>Main Card</h1>
+      <h4>Cart Item {dd.length}</h4>
+
       <div style={styles.navLinks}>
-        <Link href="/" style={styles.link}>
+        <Link href="../MainHome" style={styles.link}>
           Home
         </Link>
-        <h1>Cart Item {dd.length}</h1>
         <Link href="/Card" style={styles.link}>
           Card
+        </Link>
+        <Link href="../Login" style={styles.link}>
+          Login
+        </Link>
+        <Link href="../Register" style={styles.link}>
+          Sign Up
         </Link>
       </div>
     </nav>

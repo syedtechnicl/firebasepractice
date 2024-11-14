@@ -1,10 +1,10 @@
 import React from "react";
-import MainCarditems from "./Components/MainCarditems";
-
 const page = () => {
   return (
     <div>
-      <MainCarditems />
+      <center>
+        <h1 style={{ fontSize: "120px", color: "red" }}>Please First Login</h1>
+      </center>
     </div>
   );
 };
